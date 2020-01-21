@@ -1,13 +1,9 @@
-// console.log('hi');
+process.stdout.write("prompt > ");
 
-// console.log(process);
-
-process.stdout.write('prompt > ');
-
-process.stdin.on('data', (data) => {
-  // console.log(data);
+process.stdin.on("data", data => {
   const cmd = data.toString().trim();
-  // console.log(cmd);
-  process.stdout.write('You typed: ' + cmd);
-  process.stdout.write('\nprompt > ');
-})
+  process.stdout.write("You typed: " + cmd);
+  process.stdout.write("\nprompt > ");
+});
+
+random crap
