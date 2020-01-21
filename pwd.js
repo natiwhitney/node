@@ -2,10 +2,8 @@
 
 // });
 
-function pwd(cmd) {
-  if (cmd === "pwd") {
-    process.stdout.write(process.env.PWD + "\n");
-  }
+function pwd() {
+  process.stdout.write(process.env.PWD + "\n");
   process.stdout.write("\nprompt > ");
 }
 
